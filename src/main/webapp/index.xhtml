@@ -11,35 +11,35 @@
     <h:body>
         <f:view>
             <h:form id="mainForm">
-                <p:growl autoUpdate="true" showDetail="true" />
-                <p:messages autoUpdate="true" showDetail="true" />
+                <p:growl autoUpdate="true" />
+                
                 <p:panelGrid columns="2" >
                     <p:outputLabel value="Ad : " />
-                    <p:inputText id="adText" value="#{indexBean.kullanici.kullaniciAd}" required="true" requiredMessage="LÃ¼tfen isim alanÄ±nÄ± boÅŸ bÄ±rakmayÄ±nÄ±z." >
+                    <p:inputText id="adText" value="#{indexBean.kullanici.kullaniciAd}" required="true" requiredMessage="Lütfen isim alanını boş bırakmayınız." >
                         <p:ajax event="blur"  />
                     </p:inputText>
                     <p:outputLabel value="Soyad : " />
-                    <p:inputText id="soyadText" value="#{indexBean.kullanici.kullaniciSoyad}" required="true" requiredMessage="LÃ¼tfen isim alanÄ±nÄ± boÅŸ bÄ±rakmayÄ±nÄ±z." >
+                    <p:inputText id="soyadText" value="#{indexBean.kullanici.kullaniciSoyad}" required="true" requiredMessage="Lütfen soyadı alanını boş bırakmayınız." >
                         <p:ajax event="blur"  />
                     </p:inputText>
                     <p:outputLabel value="Cinsiyet : " />
-                    <p:inputText id="cinsiyetText" value="#{indexBean.kullanici.cinsiyet}" required="true" requiredMessage="LÃ¼tfen isim alanÄ±nÄ± boÅŸ bÄ±rakmayÄ±nÄ±z." >
+                    <p:inputText id="cinsiyetText" value="#{indexBean.kullanici.cinsiyet}" required="true" requiredMessage="Lütfen E veya K giriniz." >
                         <p:ajax event="blur"  />
                     </p:inputText>
-                    <p:outputLabel value="DoÄŸum Tarihi : " />
-                    <p:calendar id="dogumTarihiCal" value="#{indexBean.kullanici.dogumTarihi}" required="true" requiredMessage="LÃ¼tfen isim alanÄ±nÄ± boÅŸ bÄ±rakmayÄ±nÄ±z." >
+                    <p:outputLabel value="Doğum Tarihi : " />
+                    <p:calendar id="dogumTarihiCal" value="#{indexBean.kullanici.dogumTarihi}" required="true" requiredMessage="Lütfen doğum tarihi alanını boş bırakmayınız." >
                         <p:ajax event="blur"  />
                     </p:calendar>
                     <p:outputLabel value="E-mail : " />
-                    <p:inputText id="emailText" value="#{indexBean.kullanici.email}" required="true" requiredMessage="LÃ¼tfen isim alanÄ±nÄ± boÅŸ bÄ±rakmayÄ±nÄ±z." >
+                    <p:inputText id="emailText" value="#{indexBean.kullanici.email}" required="true" requiredMessage="Lütfen eposta alanını boş bırakmayınız." >
                         <p:ajax event="blur"  />
                     </p:inputText>
-                    <p:outputLabel value="Å�ifre : " />
-                    <p:password id="passwordText" value="#{indexBean.kullanici.sifre}" required="true" requiredMessage="LÃ¼tfen isim alanÄ±nÄ± boÅŸ bÄ±rakmayÄ±nÄ±z." >
+                    <p:outputLabel value="Şifre : " />
+                    <p:password id="passwordText" value="#{indexBean.kullanici.sifre}" required="true" requiredMessage="Lütfen şifre alanını boş bırakmayınız." >
                         <p:ajax event="blur"  />
                     </p:password>
 
-                    <p:commandButton value="TÄ±kla" actionListener="#{indexBean.kaydet()}" icon="ui-icon-trash"/>
+                    <p:commandButton value="Tıkla" actionListener="#{indexBean.kaydet()}" icon="ui-icon-trash"/>
                 </p:panelGrid>
             </h:form>
         </f:view>
